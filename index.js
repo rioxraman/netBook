@@ -47,5 +47,5 @@ app.set('layout extractScripts', true);
 app.use('/',router )
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Express app listening on port ${port}`)
 })
