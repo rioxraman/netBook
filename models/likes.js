@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const likeSchema = new mongoose.Schema({
     
     user:{
-        type:mongoose.Schema.Types.ObjectId,
+        type:mongoose.Schema.ObjectId,
         
     },
     likeable:{
-        type:mongoose.Schema.Types.ObjectId,
+        type:mongoose.Schema.ObjectId,
         require:true,
         refPath:'onModel'
     },
@@ -20,5 +20,5 @@ const likeSchema = new mongoose.Schema({
     timestamps:true
 })
 
-const Like = mongoose.model("Like",likeSchema)
+const Like = mongoose.model('Like',likeSchema)
 module.exports = Like;

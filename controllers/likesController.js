@@ -47,14 +47,15 @@ module.exports.toggleLike = async function(req, res){
             likeable.save();
 
         }
-
+       if(req.xhr){
         return res.json(200, {
             message: "Request successful!",
             data: {
                 deleted: deleted
             }
         })
-
+    }
+        return res.redirect('back')
 
 
     }catch(err){

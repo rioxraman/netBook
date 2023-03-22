@@ -34,4 +34,12 @@
 </div>
 
 <script src="/js/postHome.js"></script>
-
+<script src="/js/commentHome.js"></script>
+<!-- CHANGE :: import the script file for toggle likes, also run it over for the already present posts and comments on the page -->
+<script src="js/toggleLike.js"></script>
+<script>
+    $('.toggle-like-button').each(function(){
+        let self = this;
+        let toggleLike = new ToggleLike(self);
+    });
+</script>
